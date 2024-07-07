@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showExchangeInfo = false
+    @State var leftAmount = ""
+    @State var rightAmount = ""
     var body: some View {
         ZStack {
             // Background image
@@ -23,7 +26,7 @@ struct ContentView: View {
                             Image(.silverpiece).resizable().scaledToFit().frame(height: 33)
                             Text("Silver Piece").font(.headline).foregroundStyle(.white)
                         }
-                        Text("Text Field")
+                        TextField("Amount", text: $leftAmount).textFieldStyle(.roundedBorder).padding(.leading).multilineTextAlignment(.center)
                     }
                     Image(systemName: "equal").font(.largeTitle).foregroundStyle(.white).symbolEffect(.pulse)
                     VStack {
@@ -31,14 +34,20 @@ struct ContentView: View {
                             Text("Gold Piece").font(.headline).foregroundStyle(.white)
                             Image(.goldpiece).resizable().scaledToFit().frame(height: 33)
                         }
-                        Text("Text Field")
+                        TextField("Amount", text: $rightAmount).textFieldStyle(.roundedBorder).padding(.trailing).multilineTextAlignment(.center)
                     }
-                }
+                }.padding().background(.black.opacity(0.5)).clipShape(.rect(cornerRadius: 16))
                 //Button Info
                 Spacer()
                 HStack {
                     Spacer()
-                    Image(systemName: "info.circle.fill").font(.largeTitle).foregroundStyle(.white).symbolEffect(.pulse).padding(.trailing)
+//                    Image(systemName: "info.circle.fill").font(.largeTitle).foregroundStyle(.white).symbolEffect(.pulse).padding(.trailing)
+                    Button(action: {
+                        showExchangeInfo.toggle()
+                        print(showExchangeInfo)
+                    }, label: {
+                        Image(systemName: "info.circle.fill").font(.largeTitle).foregroundStyle(.white).symbolEffect(.pulse)
+                    }).padding(.trailing)
                 }
                 
             }
