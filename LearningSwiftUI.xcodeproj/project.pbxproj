@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A16CA1B72C3B003000811E04 /* ExchangeInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CA1B62C3B003000811E04 /* ExchangeInfor.swift */; };
+		A1B3AE6C2C3C3A8B008833AB /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AE6B2C3C3A8B008833AB /* ExchangeRate.swift */; };
 		A1F977892AD18DF1000F295F /* LearningSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F977882AD18DF1000F295F /* LearningSwiftUIApp.swift */; };
 		A1F9778B2AD18DF1000F295F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9778A2AD18DF1000F295F /* ContentView.swift */; };
 		A1F9778D2AD18DF2000F295F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9778C2AD18DF2000F295F /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		A16CA1B62C3B003000811E04 /* ExchangeInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfor.swift; sourceTree = "<group>"; };
+		A1B3AE6B2C3C3A8B008833AB /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		A1F977852AD18DF1000F295F /* LearningSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F977882AD18DF1000F295F /* LearningSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSwiftUIApp.swift; sourceTree = "<group>"; };
 		A1F9778A2AD18DF1000F295F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1B3AE6A2C3C3A15008833AB /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3AE6B2C3C3A8B008833AB /* ExchangeRate.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		A1F9777C2AD18DF0000F295F = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 		A1F977872AD18DF1000F295F /* LearningSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A1B3AE6A2C3C3A15008833AB /* CustomView */,
 				A1F977882AD18DF1000F295F /* LearningSwiftUIApp.swift */,
 				A1F9778A2AD18DF1000F295F /* ContentView.swift */,
 				A16CA1B62C3B003000811E04 /* ExchangeInfor.swift */,
@@ -140,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B3AE6C2C3C3A8B008833AB /* ExchangeRate.swift in Sources */,
 				A1F9778B2AD18DF1000F295F /* ContentView.swift in Sources */,
 				A1F977892AD18DF1000F295F /* LearningSwiftUIApp.swift in Sources */,
 				A16CA1B72C3B003000811E04 /* ExchangeInfor.swift in Sources */,
