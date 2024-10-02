@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99964C182CAD0368005ABE36 /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99964C172CAD0368005ABE36 /* SelectCurrency.swift */; };
+		99964C1C2CAD0DA2005ABE36 /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99964C1B2CAD0DA2005ABE36 /* CurrencyIcon.swift */; };
 		A16CA1B72C3B003000811E04 /* ExchangeInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CA1B62C3B003000811E04 /* ExchangeInfor.swift */; };
 		A1B3AE6C2C3C3A8B008833AB /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3AE6B2C3C3A8B008833AB /* ExchangeRate.swift */; };
 		A1F977892AD18DF1000F295F /* LearningSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F977882AD18DF1000F295F /* LearningSwiftUIApp.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99964C172CAD0368005ABE36 /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
+		99964C1B2CAD0DA2005ABE36 /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
 		A16CA1B62C3B003000811E04 /* ExchangeInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfor.swift; sourceTree = "<group>"; };
 		A1B3AE6B2C3C3A8B008833AB /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		A1F977852AD18DF1000F295F /* LearningSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,8 @@
 				A1B3AE6A2C3C3A15008833AB /* CustomView */,
 				A1F977882AD18DF1000F295F /* LearningSwiftUIApp.swift */,
 				A1F9778A2AD18DF1000F295F /* ContentView.swift */,
+				99964C172CAD0368005ABE36 /* SelectCurrency.swift */,
+				99964C1B2CAD0DA2005ABE36 /* CurrencyIcon.swift */,
 				A16CA1B62C3B003000811E04 /* ExchangeInfor.swift */,
 				A1F9778C2AD18DF2000F295F /* Assets.xcassets */,
 				A1F9778E2AD18DF2000F295F /* Preview Content */,
@@ -152,9 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B3AE6C2C3C3A8B008833AB /* ExchangeRate.swift in Sources */,
+				99964C182CAD0368005ABE36 /* SelectCurrency.swift in Sources */,
 				A1F9778B2AD18DF1000F295F /* ContentView.swift in Sources */,
 				A1F977892AD18DF1000F295F /* LearningSwiftUIApp.swift in Sources */,
 				A16CA1B72C3B003000811E04 /* ExchangeInfor.swift in Sources */,
+				99964C1C2CAD0DA2005ABE36 /* CurrencyIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

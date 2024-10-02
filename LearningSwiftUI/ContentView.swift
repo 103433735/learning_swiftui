@@ -47,7 +47,9 @@ struct ContentView: View {
                         print(showExchangeInfo)
                     }, label: {
                         Image(systemName: "info.circle.fill").font(.largeTitle).foregroundStyle(.white).symbolEffect(.pulse)
-                    }).padding(.trailing)
+                    }).padding(.trailing).sheet(isPresented: $showExchangeInfo, content: {
+                        ExchangeInfor()
+                    })
                 }
                 
             }
