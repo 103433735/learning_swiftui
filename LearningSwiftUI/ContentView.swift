@@ -10,8 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @State var showExchangeInfo = false
     @State var showSelectCurrency = false
+    
     @State var leftAmount = ""
     @State var rightAmount = ""
+    
+    @FocusState var leftTyping
+    @FocusState var rightTyping
+    
     @State var leftCurrency: Currency = .silverPiece
     @State var rightCurrency: Currency = .goldPenny
     var body: some View {
@@ -20,7 +25,7 @@ struct ContentView: View {
             Image(.background)
                 .resizable()
                 .ignoresSafeArea()
-
+            
             VStack {
                 Image(.prancingpony)
                     .resizable()
@@ -48,6 +53,12 @@ struct ContentView: View {
                             .textFieldStyle(.roundedBorder)
                             .padding(.leading)
                             .multilineTextAlignment(.center)
+                            .focused($leftTyping)
+                            .onChange(of: leftAmount) {
+                                if leftTyping {
+                                    rightAmount = leftCurrency.convert(amount: leftAmount, toCurrency: rightCurrency)
+                                }
+                            }
                     }
                     Image(systemName: "equal")
                         .font(.largeTitle)
@@ -71,6 +82,12 @@ struct ContentView: View {
                             .textFieldStyle(.roundedBorder)
                             .padding(.trailing)
                             .multilineTextAlignment(.center)
+                            .focused($rightTyping)
+                            .onChange(of: rightAmount) {
+                                if rightTyping {
+                                    leftAmount = rightCurrency.convert(amount: rightAmount, toCurrency: leftCurrency)
+                                }
+                            }
                     }
                 }
                 .padding()
@@ -80,7 +97,7 @@ struct ContentView: View {
                 Spacer()
                 HStack {
                     Spacer()
-//                    Image(systemName: "info.circle.fill").font(.largeTitle).foregroundStyle(.white).symbolEffect(.pulse).padding(.trailing)
+                    //                    Image(systemName: "info.circle.fill").font(.largeTitle).foregroundStyle(.white).symbolEffect(.pulse).padding(.trailing)
                     Button(action: {
                         showExchangeInfo.toggle()
                         print(showExchangeInfo)
