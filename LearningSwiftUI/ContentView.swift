@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct ContentView: View {
     @State var showExchangeInfo = false
@@ -49,11 +50,13 @@ struct ContentView: View {
                         .onTapGesture {
                             showSelectCurrency.toggle()
                         }
+                        .popoverTip(CurrencyTip(title: Text("Select Currency"), message: Text("You can tap currency icons to open Select Currency Screen")), arrowEdge: .top)
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
                             .padding(.leading)
                             .multilineTextAlignment(.center)
                             .focused($leftTyping)
+                            .keyboardType(.decimalPad)
                             .onChange(of: leftAmount) {
                                 if leftTyping {
                                     rightAmount = leftCurrency.convert(amount: leftAmount, toCurrency: rightCurrency)
@@ -78,11 +81,13 @@ struct ContentView: View {
                         .onTapGesture {
                             showSelectCurrency.toggle()
                         }
+                        .popoverTip(CurrencyTip(title: Text("Real-time convert"), message: Text("Enter the number to convert immediately")), arrowEdge: .bottom)
                         TextField("Amount", text: $rightAmount)
                             .textFieldStyle(.roundedBorder)
                             .padding(.trailing)
                             .multilineTextAlignment(.center)
                             .focused($rightTyping)
+                            .keyboardType(.decimalPad)
                             .onChange(of: rightAmount) {
                                 if rightTyping {
                                     leftAmount = rightCurrency.convert(amount: rightAmount, toCurrency: leftCurrency)
@@ -117,6 +122,9 @@ struct ContentView: View {
                     }
                 }
                 
+            }
+            .task {
+                try? Tips.configure()
             }
         }
     }

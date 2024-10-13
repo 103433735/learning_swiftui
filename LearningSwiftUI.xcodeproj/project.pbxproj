@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990D1BAD2CBBCEB600818BC5 /* CurrencyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990D1BAC2CBBCEB600818BC5 /* CurrencyTip.swift */; };
 		99964C182CAD0368005ABE36 /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99964C172CAD0368005ABE36 /* SelectCurrency.swift */; };
 		99964C1C2CAD0DA2005ABE36 /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99964C1B2CAD0DA2005ABE36 /* CurrencyIcon.swift */; };
 		99964C1F2CAD29ED005ABE36 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99964C1E2CAD29ED005ABE36 /* Currency.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		990D1BAC2CBBCEB600818BC5 /* CurrencyTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTip.swift; sourceTree = "<group>"; };
 		99964C172CAD0368005ABE36 /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
 		99964C1B2CAD0DA2005ABE36 /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
 		99964C1E2CAD29ED005ABE36 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		990D1BAB2CBBCEA300818BC5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				990D1BAC2CBBCEB600818BC5 /* CurrencyTip.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		99964C1D2CAD29AD005ABE36 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		A1F977872AD18DF1000F295F /* LearningSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				990D1BAB2CBBCEA300818BC5 /* Extension */,
 				99964C1D2CAD29AD005ABE36 /* Model */,
 				A1B3AE6A2C3C3A15008833AB /* CustomView */,
 				A1F977882AD18DF1000F295F /* LearningSwiftUIApp.swift */,
@@ -176,6 +187,7 @@
 				99964C182CAD0368005ABE36 /* SelectCurrency.swift in Sources */,
 				A1F9778B2AD18DF1000F295F /* ContentView.swift in Sources */,
 				A1F977892AD18DF1000F295F /* LearningSwiftUIApp.swift in Sources */,
+				990D1BAD2CBBCEB600818BC5 /* CurrencyTip.swift in Sources */,
 				A16CA1B72C3B003000811E04 /* ExchangeInfor.swift in Sources */,
 				99964C1F2CAD29ED005ABE36 /* Currency.swift in Sources */,
 				99964C1C2CAD0DA2005ABE36 /* CurrencyIcon.swift in Sources */,
